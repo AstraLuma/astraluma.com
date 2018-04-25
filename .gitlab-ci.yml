@@ -1,8 +1,11 @@
-publish:
+pages:
+  stage: deploy
   image: python:latest
   artifacts:
     paths:
       - public
+  only:
+    - master
   before_script:
     - pip install pipenv
     - which pip
