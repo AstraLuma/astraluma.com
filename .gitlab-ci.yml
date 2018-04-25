@@ -1,0 +1,9 @@
+publish:
+  image: python:latest
+  artifacts:
+    paths:
+      - public
+  before_script:
+    - pip install pipenv
+  script:
+    - pipenv run make publish
