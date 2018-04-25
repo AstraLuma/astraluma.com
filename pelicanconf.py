@@ -3,14 +3,17 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Jamie Bliss'
-SITENAME = 'Jamie Bliss'
+SITENAME = 'astraluma'
 SITEURL = ''
 
 PATH = 'content'
+THEME = 'theme'
 
 TIMEZONE = 'America/Detroit'
 
 DEFAULT_LANG = 'en'
+
+PROFILE_IMAGE = ''
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -26,8 +29,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/astronouth7303/'),
+          ('twitter', 'https://twitter.com/AstraLuma'),
+          ('fediverse', 'https://cybre.space/@astraluma'),
+          ('gitlab', 'https://gitlab.com/astronouth7303/'),)
 
 DEFAULT_PAGINATION = False
 
