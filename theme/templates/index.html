@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<div class="pages">
+		{% for page in pages %}
+			<div class="post">
+				<h1 class="post-title" href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">
+					<a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a>
+				</h1>
+			</div>
+		{% endfor %}
+	</div>
 	<div class="posts">
 		{% for article in articles_page.object_list %}
 			<div class="post">

@@ -28,7 +28,7 @@ SOCIAL = (('github', 'https://github.com/astronouth7303/'),
           ('fediverse', 'https://cybre.space/@astraluma'),
           ('gitlab', 'https://gitlab.com/astronouth7303/'),)
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
