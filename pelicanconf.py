@@ -23,12 +23,18 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/astronouth7303/'),
-          ('twitter', 'https://twitter.com/AstraLuma'),
-          ('fediverse', 'https://cybre.space/@astraluma'),
-          ('gitlab', 'https://gitlab.com/astronouth7303/'),)
+SOCIAL = (
+	('github', 'https://github.com/astronouth7303/'),
+	('twitter', 'https://twitter.com/AstraLuma'),
+#	('fediverse', 'https://cybre.space/@astraluma'),
+	('gitlab', 'https://gitlab.com/astronouth7303/'),
+#	('twitch', 'https://twitch.tv/astraluma'),
+#	('email', 'jamie.bliss@astro73.com'),
+	('feed', ''),
+	('kofi', 'https://ko-fi.com/astraluma'),
+)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

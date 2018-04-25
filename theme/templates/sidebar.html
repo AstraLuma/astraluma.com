@@ -20,15 +20,20 @@
 					<a class="sidebar-nav-item" href="mailto:{{ link }}">
 						<i class="fa fa-envelope"></i>
 					</a>
+				{% elif name == 'kofi' %}
+					<a title="Support me on ko-fi.com" class="sidebar-nav-item" href="{{ link }}" target="_blank">
+						<img src="https://ko-fi.com/img/cuplogo.svg">
+					</a>
+				{% elif name == 'feed' %}
+					<a class="sidebar-nav-item" href="{{ FEED_ALL_RSS }}">
+						<i class="fa fa-feed"></i>
+					</a>
 				{% else %}
 					<a class="sidebar-nav-item" href="{{ link }}">
 						<i class="fab fa-{{ name }}"></i>
 					</a>
 				{% endif %}
 			{% endfor %}
-			<a class="sidebar-nav-item" href="{{ FEED_ALL_RSS }}">
-				<i class="fa fa-feed"></i>
-			</a>
 		</nav>
 	</div>
 </div>

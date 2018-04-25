@@ -111,6 +111,12 @@ html {
   float: left;
   width: 17%;
 }
+.sidebar-nav-item > img {
+  display: inline;
+  margin: 0;
+  vertical-align: middle;
+  max-height: 0.8rem;
+}
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   background: #6096ac;
