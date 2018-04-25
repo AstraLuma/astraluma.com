@@ -26,9 +26,9 @@ AUTHOR_FEED_RSS = None
 # This theme only really allows for five items
 SOCIAL = (
 	('github', 'https://github.com/astronouth7303/'),
+	('gitlab', 'https://gitlab.com/astronouth7303/'),
 	('twitter', 'https://twitter.com/AstraLuma'),
 	('mastodon', 'https://cybre.space/@astraluma'),
-	('gitlab', 'https://gitlab.com/astronouth7303/'),
 #	('twitch', 'https://twitch.tv/astraluma'),
 #	('email', 'jamie.bliss@astro73.com'),
 #	('feed', ''),
