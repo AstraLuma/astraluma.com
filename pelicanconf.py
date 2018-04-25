@@ -23,14 +23,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Social widget
+# This theme only really allows for five items
 SOCIAL = (
 	('github', 'https://github.com/astronouth7303/'),
 	('twitter', 'https://twitter.com/AstraLuma'),
-#	('fediverse', 'https://cybre.space/@astraluma'),
+	('mastodon', 'https://cybre.space/@astraluma'),
 	('gitlab', 'https://gitlab.com/astronouth7303/'),
 #	('twitch', 'https://twitch.tv/astraluma'),
 #	('email', 'jamie.bliss@astro73.com'),
-	('feed', ''),
+#	('feed', ''),
 	('kofi', 'https://ko-fi.com/astraluma'),
 )
 

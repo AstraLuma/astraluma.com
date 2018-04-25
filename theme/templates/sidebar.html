@@ -22,6 +22,10 @@
 					</a>
 				{% elif name == 'kofi' %}
 					<a title="Support me on ko-fi.com" class="sidebar-nav-item" href="{{ link }}" target="_blank">
+						<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/mastodon.svg">
+					</a>
+				{% elif name == 'mastodon' %}
+					<a class="sidebar-nav-item" href="{{ link }}">
 						<img src="https://ko-fi.com/img/cuplogo.svg">
 					</a>
 				{% elif name == 'feed' %}
