@@ -5,5 +5,7 @@ publish:
       - public
   before_script:
     - pip install pipenv
+    - which pip
+    - which python
   script:
     - pipenv run make publish
