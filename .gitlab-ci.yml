@@ -8,4 +8,4 @@ publish:
     - which pip
     - which python
   script:
-    - pipenv run make publish
+    - "pipenv --python `which python` run make publish"
