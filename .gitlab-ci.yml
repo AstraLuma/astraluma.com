@@ -13,3 +13,11 @@ pages:
   script:
     - "pipenv install"
     - "pipenv run make publish"
+
+salt:
+  stage: deploy
+  image: registry.gitlab.com/saltspiro/spiro-deploy:master
+  only:
+    - master
+  script:
+    spiro-deploy astraluma prod --highstate
