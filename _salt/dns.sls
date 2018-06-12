@@ -1,4 +1,4 @@
-"astraluma_com_a_{{ip}}":
+"astraluma_com_a":
   boto_route53.present:
     - name: astraluma.com.
     - value:
