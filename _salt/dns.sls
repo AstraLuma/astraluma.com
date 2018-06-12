@@ -1,12 +1,13 @@
-{% for ip in salt['dnsutil.A']('astronouth7303.gitlab.io.') %}
 "astraluma_com_a_{{ip}}":
   boto_route53.present:
     - name: astraluma.com.
-    - value: {{ip}}
+    - value:
+{% for ip in salt['dnsutil.A']('astronouth7303.gitlab.io.') %}
+      - {{ip}}
+{% endfor %}
     - zone: astraluma.com.
     - record_type: A
     - ttl: 60
-{% endfor %}
 
 astraluma_com_txt_gitlab:
   boto_route53.present:
@@ -22,6 +23,19 @@ astraluma_com_txt:
     - name: astraluma.com
     - value: 
       - '"google-site-verification=iY3OsqvdQv4R3OOACR-bRsyG-26ctP4vy1aHoAky5oU"'
+    - zone: astraluma.com.
+    - record_type: TXT
+    - ttl: 60
+
+astraluma_com_mx:
+  boto_route53.present:
+    - name: astraluma.com
+    - value: 
+      - '1 ASPMX.L.GOOGLE.COM.'
+      - '5 ALT1.ASPMX.L.GOOGLE.COM.'
+      - '5 ALT2.ASPMX.L.GOOGLE.COM.'
+      - '10 ASPMX2.GOOGLEMAIL.COM.'
+      - '10 ASPMX3.GOOGLEMAIL.COM.'
     - zone: astraluma.com.
     - record_type: TXT
     - ttl: 60
