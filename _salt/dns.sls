@@ -37,5 +37,5 @@ astraluma_com_mx:
       - '10 ASPMX2.GOOGLEMAIL.COM.'
       - '10 ASPMX3.GOOGLEMAIL.COM.'
     - zone: astraluma.com.
-    - record_type: TXT
+    - record_type: MX
     - ttl: 60
