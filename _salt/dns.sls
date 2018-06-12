@@ -23,6 +23,7 @@ astraluma_com_txt:
     - name: astraluma.com
     - value: 
       - '"google-site-verification=iY3OsqvdQv4R3OOACR-bRsyG-26ctP4vy1aHoAky5oU"'
+      - '"v=spf1 include:aspmx.googlemail.com ~all"'
     - zone: astraluma.com.
     - record_type: TXT
     - ttl: 60
