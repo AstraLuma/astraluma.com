@@ -24,6 +24,7 @@ astraluma_com_txt:
     - value: 
       - '"google-site-verification=iY3OsqvdQv4R3OOACR-bRsyG-26ctP4vy1aHoAky5oU"'
       - '"v=spf1 include:aspmx.googlemail.com ~all"'
+      - '"keybase-site-verification=dhGBCvEbvOVLXUX5IZQIQ-Pmm6JIIJu1Fe-aKL4wR3U"'
     - zone: astraluma.com.
     - record_type: TXT
     - ttl: 60
