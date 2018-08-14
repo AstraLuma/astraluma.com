@@ -9,6 +9,8 @@ SITEURL = ''
 PATH = 'content'
 THEME = 'theme'
 
+STATIC_PATHS = ['images', 'files']
+
 TIMEZONE = 'America/Detroit'
 
 DEFAULT_LANG = 'en'
