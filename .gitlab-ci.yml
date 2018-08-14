@@ -1,6 +1,6 @@
 pages:
-  stage: deploy
-  image: python:latest
+  stage: build
+  image: python:3.6
   artifacts:
     paths:
       - public
