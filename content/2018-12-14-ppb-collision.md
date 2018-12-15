@@ -13,7 +13,6 @@ Status: Draft
 .post .clear {
     clear: both;
 }
-
 </style>
 
 Working on [PursuedPyBear](https://github.com/ppb/pursuedpybear), we often face
@@ -34,26 +33,26 @@ inelastic collisions, or just "physics" in general).
 When I wrote [Hug the Humans](https://gitlab.com/astronouth7303/mutant-games/blob/master/hugs.py),
 I wrote a basic point-region collision.
 
-![bear sprite](images/ms-bear.svg)
+![bear sprite](/images/ms-bear.svg)
 Quick intro, _Hug the Humans_ is a game where you play as a bear (or one of a
 number of other monsters) and run around trying to hug the screaming humans.
 Specifically, this bear.
 
 <div class="clear"></div>
 
-![bear sprite with circular region overlay](images/ms-bear-circular-region.svg)
+![bear sprite with circular region overlay](/images/ms-bear-circular-region.svg)
 In this case, I decided to use a circular region (shown in blue) because I felt
 they better approximate the shape of most sprites (compared to rectangles) while
 still keeping the math fairly straight-forward.
 
 <div class="clear"></div>
 
-![bear sprite with rectangular region overlay](images/ms-bear-rectangular-region.svg)
+![bear sprite with rectangular region overlay](/images/ms-bear-rectangular-region.svg)
 A square region wouldn't fit so well
 
 <div class="clear"></div>
 
-![bear sprite with region overlay and scared face with point overlay](images/ms-bear-region-face-point.svg)
+![bear sprite with region overlay and scared face with point overlay](/images/ms-bear-region-face-point.svg)
 By "region-point system", I mean the sprite in question (the player's bear
 sprite) would compare the location points of other sprites to its own region.
 
