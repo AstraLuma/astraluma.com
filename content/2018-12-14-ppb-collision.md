@@ -68,8 +68,11 @@ There's a few proposals for PPB:
 
 1. Just have square regions with a basic `Sprite.collides_with()` method
 2. Copy/paste the code from _Hug the Humans_ as `ppb.contrib.collision`
-3. Extend the _Hug the Humans_ code
+3. Extend one or both of the above.
 
+The biggest problem of any of them, though, is that we want region-region
+collisions and as far as I know, there's no efficient general algorithm to check if arbitrary shapes overlap. We can have circle-circle, rectangle-rectangle, or
+circle-rectangle collisions.
 
 
 <span style="font-size: smaller; font-style: italic;">Note: This post uses [Mutant Standard emoji](https://mutant.tech), which are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).</span>
