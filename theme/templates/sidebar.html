@@ -17,23 +17,23 @@
 		<nav class="sidebar-nav">
 			{% for name, link in SOCIAL %}
 				{% if name == 'email' %}
-					<a class="sidebar-nav-item" href="mailto:{{ link }}" rel="me">
+					<a class="sidebar-nav-item" title="Email" href="mailto:{{ link }}" rel="me">
 						<i class="fa fa-envelope"></i>
 					</a>
 				{% elif name == 'kofi' %}
-					<a title="Support me on ko-fi.com" class="sidebar-nav-item" href="{{ link }}" target="_blank" rel="me">
+					<a class="sidebar-nav-item" title="Buy me a Coffee" href="{{ link }}" target="_blank" rel="me">
 						<img src="https://ko-fi.com/img/cuplogo.svg">
 					</a>
 				{% elif name == 'mastodon' %}
-					<a class="sidebar-nav-item" href="{{ link }}" rel="me">
+					<a class="sidebar-nav-item" title="Mastodon" href="{{ link }}" rel="me">
 						<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/mastodon.svg">
 					</a>
 				{% elif name == 'feed' %}
-					<a class="sidebar-nav-item" href="{{ FEED_ALL_RSS }}">
+					<a class="sidebar-nav-item" title="RSS Feed" href="{{ FEED_ALL_RSS }}">
 						<i class="fa fa-feed"></i>
 					</a>
 				{% else %}
-					<a class="sidebar-nav-item" href="{{ link }}" rel="me">
+					<a class="sidebar-nav-item" title="{{name}}" href="{{ link }}" rel="me">
 						<i class="fab fa-{{ name }}"></i>
 					</a>
 				{% endif %}
