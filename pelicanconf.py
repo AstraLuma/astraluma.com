@@ -6,6 +6,8 @@ AUTHOR = 'Jamie Bliss'
 SITENAME = 'astraluma'
 SITEURL = ''
 
+BIO = 'To hire, see <a href="https://lumami.biz/">Lumami Software</a>'
+
 PATH = 'content'
 THEME = 'theme'
 
