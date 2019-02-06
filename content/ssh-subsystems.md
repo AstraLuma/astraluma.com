@@ -19,7 +19,10 @@ Common HTTP Authentication methods:
 
 Few of these are particularly well standardized, several are fairly complex, and
 almost none are commonly available on clients. And no clients share
-authentication information. In addition, the constant sending of authentication
+authentication information. And almost none store their authentication
+credentials securely.
+
+In addition, the constant sending of authentication
 information directly leads to the [CRIME](https://en.wikipedia.org/wiki/CRIME)
 attack.
 
