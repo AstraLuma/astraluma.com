@@ -20,4 +20,4 @@ salt:
   only:
     - master
   script:
-    spiro-deploy astraluma prod --highstate
+    spiro-deploy astraluma prod --highstate --artifact=public
