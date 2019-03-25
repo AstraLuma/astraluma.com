@@ -1,4 +1,4 @@
-nginx-lumami:
+nginx-astraluma:
   service.running:
     - name: nginx
     - reload: true
@@ -13,7 +13,7 @@ astraluma.com:
     - email: webmaster@astraluma.com
     - webroot: /srv/certbot
     - watch_in:
-        - service: nginx-lumami
+        - service: nginx-astraluma
 
 www.astraluma.com:
   acme.cert:
