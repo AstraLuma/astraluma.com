@@ -29,7 +29,7 @@ AUTHOR_FEED_RSS = None
 # Social widget
 # This theme only really allows for five items
 SOCIAL = (
-	('github', 'https://github.com/astronouth7303/'),
+	('github', 'https://github.com/AstraLuma/'),
 	('gitlab', 'https://gitlab.com/astronouth7303/'),
 	('twitter', 'https://twitter.com/AstraLuma'),
 	('mastodon', 'https://cybre.space/@astraluma'),
