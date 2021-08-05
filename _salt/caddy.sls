@@ -16,10 +16,12 @@ caddy-astraluma:
       - file: /srv/astraluma.com
     - contents: |
         astraluma.com {
+          import logging
           root * /srv/astraluma.com
           file_server
         }
 
         www.astraluma.com {
+          import logging
           redir https://astraluma.com{uri} 301
         }
