@@ -13,10 +13,10 @@ caddy-astraluma:
     - watch_in:
       - service: caddy-astraluma
     - require:
-      - archive: /srv/astraluma.com
+      - file: /srv/astraluma.com
     - contents: |
         astraluma.com {
-          root /srv/astraluma.com
+          root * /srv/astraluma.com
           file_server
         }
 
