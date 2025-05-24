@@ -4,7 +4,7 @@ verify_ssl = true
 url = "https://pypi.python.org/simple"
 
 [packages]
-pelican = "*"
+pelican = "<4"
 markdown = "*"
 
 [dev-packages]

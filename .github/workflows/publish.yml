@@ -17,14 +17,13 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/library/python:3.6
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.6' 
-      - run: pip install pipenv==2020.5.28
+      - run: pip install pipenv
       - run: pipenv install
       - run: pipenv run make publish
       - uses: actions/upload-artifact@v4
