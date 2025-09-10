@@ -49,8 +49,3 @@ jobs:
         with:
           domain: astraluma.com
           root: ./public
-      - name: Upload (WWW)
-        uses: teahouse-hosting/upload@trunk
-        with:
-          domain: www.astraluma.com
-          root: ./public
